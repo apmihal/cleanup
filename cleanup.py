@@ -5,6 +5,10 @@ from sys import argv
 def cleanUp():
     """Looks in startPath for all filenames containing argv[1], creates and
     moves them to a sub-directory with the same name."""
+    if len(argv) != 2:
+        print("Use: specify the string you'd like to search for in filenames as a command line argument.")
+        return 1
+
     startPath = #Path of directory you'd like to clean up.
     targetPath = os.path.join(startPath, argv[1])
     print(targetPath)
@@ -23,5 +27,5 @@ def cleanUp():
 def main():
     cleanUp()
 
-in __name__ == '__main__':
+if __name__ == '__main__':
     main()
