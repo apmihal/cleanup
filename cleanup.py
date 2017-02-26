@@ -18,7 +18,7 @@ def cleanUp():
 
     for filename in os.listdir(startPath):
         #Change the extension to whatver type of file you'd like to clean up.
-        if argv[1] in filename and filename.endswith('.jpg'):
+        if argv[1].lower() in filename.lower() and filename.endswith('.txt'):
             currentLoc = os.path.join(startPath, filename)
             targetLoc = os.path.join(targetPath, filename)
             os.rename(currentLoc, targetLoc)
