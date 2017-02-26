@@ -1,2 +1,2 @@
 # cleanup
-Simple python script to organize files into folders based on keywords found in filenames.
+Simple python script to organize files into directories based on keywords found in filenames. Edit the startPath value to the path of the directory you want to clean up. Run the program with an additional command line argument of the keyword you've chosen. The program will search all filenames in the directory for filenames containing the keyword, and move those files into a new sub-directory named after the keyword.
